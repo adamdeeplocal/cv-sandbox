@@ -1,0 +1,2 @@
+osascript -e "tell application \"Google Chrome\" to quit"
+cat ../../.current_demo_pid | xargs kill
