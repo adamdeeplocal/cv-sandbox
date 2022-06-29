@@ -1,0 +1,21 @@
+{
+  "files.exclude": {
+    "build": true,
+    "ios": true,
+    "android": true,
+    ".vscode": true,
+    ".idea": true,
+    ".dart_tool": true,
+    ".gitignore": true,
+    ".metadata": true,
+    ".packages": true,
+    "README.md": true,
+    "linux": true,
+    "macos": true,
+    "pubspec.lock": true,
+    "sandbox_mac_app.iml": true,
+    "test": true,
+    "web": true,
+    "windows": true
+  }
+}
