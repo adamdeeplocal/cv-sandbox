@@ -16,10 +16,9 @@ class HomeScreenCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () async {
+        final navigator = Navigator.of(context); // store the Navigator
         await ShellServices.startModel(cvModel);
-        print("Done running shell command");
-        // ignore: use_build_context_synchronously
-        Navigator.push(context, MaterialPageRoute(builder: (context) => ModelInfoScreen(cvModel: cvModel)));
+        navigator.push(MaterialPageRoute(builder: (context) => ModelInfoScreen(cvModel: cvModel)));
       },
       child: Container(
         width: 200.0,
